@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-size: 14px;
+}
+
+.container{
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}  
+
+.header{
+    background-color: ghostwhite;
+    padding-top: 46px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo::after{
+    content:"";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    background-color: gray;
+}
+
+/* Nav*/
+.nav-list{
+display: flex;
+column-gap: 50px;
+font-weight: 500;
+font-size: 14px;
+list-style-type: none;
+}
+
+.nav-link{
+color:black;
+text-decoration: none;
+}
+
+/*header content*/
+
+.header-row{
+display: flex;
+justify-content: space-between;
+column-gap: 30px;
+}
+
+.header-content{
+    max-width: 500px;
+}
+
+.header-heading{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 40px;
+    padding-top: 124px;
+}
+
+.header-content p {
+    line-height:2;
+}
+/* Additional styles for the registration page */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: ghostwhite;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-heading {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* Books Page Styles */
+.section-heading {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.book-item {
+    text-align: center;
+    padding: 20px;
+    background-color: ghostwhite;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+.book-cover {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+
+.book-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+/* Zoom effect on hover */
+.book-item:hover .book-cover {
+    transform: scale(1.1); /* Scales the image to 110% */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-section p, 
+.footer-section ul,
+.footer-section li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    margin-top: 30px;
+}
